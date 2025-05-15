@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+:root {
+  --primary-color: #0056b3; /* A slightly deeper, more professional blue */
+  --text-color: #333; /* Darker, more standard text color */
+  --secondary-text-color: #777; /* A softer secondary text color */
+  --background-color: #f9f9f9; /* A slightly warmer, professional light background */
+  --accent-color: #28a745; /* Green for highlights or calls to action */
+  --border-color: #ddd; /* Light gray for subtle borders */
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: 'Open Sans', sans-serif; /* A clean and professional sans-serif font */
+  font-size: 1rem; /* Base font size for better control with rem units */
+  line-height: 1.7; /* Improved line height for readability */
+  margin: 30px; /* Slightly more generous margin */
+  color: var(--text-color);
+  -webkit-font-smoothing: antialiased; /* Better text rendering for smoother edges on webkit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Better text rendering for smoother edges on Firefox */
+}
+
+h1 {
+  color: var(--primary-color);
+  font-size: 2.2rem; /* Larger, more impactful heading */
+  font-weight: 700; /* Bold font weight for emphasis */
+  margin-bottom: 20px;
+  letter-spacing: -0.05rem; /* Slightly reduce letter spacing for a cleaner look */
+}
+
+p {
+  color: var(--secondary-text-color);
+  font-size: 1.1rem; /* Slightly larger for better readability */
+  line-height: 1.8; /* Improved line height for paragraph text */
+  margin-bottom: 20px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 25px 0; /* More spacing around the horizontal rule */
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+a:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 600; /* Slightly less heavy than bold for a more refined look */
+  color: var(--text-color); /* Ensure strong text is clearly visible */
+}
+
+em {
+  font-style: italic;
+  color: var(--secondary-text-color);
+}
+
+mark {
+  background-color: #fff8e1; /* A softer yellow for highlighting */
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  color: var(--text-color);
+}
+
+code {
+  font-family: 'Consolas', monospace; /* A more standard monospace font for code */
+  background-color: #eee;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+pre {
+  font-family: 'Consolas', monospace;
+  background-color: #eee;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto; /* Enable horizontal scrolling for long code blocks */
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+/* --- Responsive adjustments for better readability on smaller screens --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 0.9rem;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+
+  ul li {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+}
